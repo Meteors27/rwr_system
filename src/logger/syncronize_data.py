@@ -257,7 +257,7 @@ def main():
     args = parser.parse_args()
 
     if args.cfg_file == "":
-        cfg_file = os.path.join(get_package_share_directory("experiments"), "cfgs", "logger", "datacollection_default.yaml")
+        cfg_file = os.path.join(get_package_share_directory("experiments"), "cfgs", "logger", "datacollection_right.yaml")
     else:
         cfg_file = args.cfg_file
     cfgyaml = yaml.safe_load(open(cfg_file, 'r'))
